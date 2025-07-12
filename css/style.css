@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --orange: #fe7235;
+    --blue: #0077FF;
+    --light-blue: #00c3FF;
+    --yellow: #f7df0fe1;
+    --font-header: "Raleway", sans-serif;
+    --color-header: white;
+}
+
+.nav-link:hover{
+    color: var(--orange);
+}
+
+
+.search{
+    display: flex;
+}
+
+#search-btn{
+    background: transparent;
+    border: none;
+}
+
+#search-btn:hover{
+    cursor: pointer;
+}
+
+
+.menu{
+    max-width: 20%;
+    width: max-content;
+    height: 100vh;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: white;
+    opacity: 0.95;
+    box-shadow: 2px 2px 2px 1px var(--light-blue);
+    margin-left: -100%;
+    transition: 0.5s;
+    
+}
+
+.menu-opened{
+    margin-left: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--blue);
+    padding: 5%;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: var(--orange);
+}
+
+#menu-close-btn{
+    all: unset;
+    width: max-content;
+    padding: 5% 20%;
+    margin: 10%;
+    background: linear-gradient(var(--blue), var(--light-blue));
+    border-radius: 5px;
+    text-align: center;
+    color: var(--color-header);
+    font-family: var(--font-header);
+    font-weight: 600;
+}
+
+#menu-close-btn:hover{
+    color: rgb(204, 199, 199);
+    cursor: pointer;
+}
+
+.header-top{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to right, var(--blue), var(--light-blue));
+    display: flex;
+}
+
+.adv-header{
+    color: var(--color-header);
+    font-size: 3rem;
+    font-family: var(--font-header);
+}
+
+.adv-header h4{
+    font-weight: 600;
+}
+
+.colon{
+    opacity: 0;
+    animation: colon 1s infinite;
+}
+
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 10% 0;
+    font-family: var(--font-header);
+    font-weight: 600;
+
+}
+
+.timer p {
+    font-size: 2rem;
+}
+
+.timer h4{
+    font-size: 2.1rem;
+    line-height: 2;
+}
+
+.flash{
+    width: 8px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    top: 40%;
+    border-radius: 5px;
+    animation: flight 10s infinite;
+}
+
+.profile-btn{
+    max-width: 150px;
+    background: white;
+}
+
+.flash1{
+    width: 8px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    border-radius: 5px;
+    animation: flight 8s infinite;
+   
+}
+
+.flash2{
+    width: 8px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    border-radius: 5px;
+    animation: flight 6s infinite;
+    
+}
+
+
+.flash3{
+    width: 8px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    border-radius: 5px;
+    animation: flight 8s infinite;
+    
+}
+
+
+.flash4{
+    width: 8px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    border-radius: 5px;
+    animation: flight 5s infinite;
+}
+
+
+.name{
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    background: linear-gradient(to left bottom, var(--orange), var(--yellow));
+    color: white;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: title 5s infinite;
+    transition: 1s;
+}
+
+
+.main-link {
+    text-decoration: none;
+}
+
+.phone-btn{
+
+    all: unset;
+    max-width: 400px;
+    color: var(--orange);
+    font-family: var(--font-header);
+    font-size: 2rem;
+
+}
+
+.phone-btn-img{
+    padding: 0 5%;
+    animation: phone-call 2s infinite;
+
+}
+
+
+.description{
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+
+
+.header-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.action{
+    width: 100%;
+    margin: 2%;
+    height: 40vh;
+    padding: 5%;
+    border: 1px solid black;
+    background: linear-gradient(var(--blue), var(--light-blue));
+    color: lightgray;
+    font-size: 2rem;
+    font-family: var(--font-header);
+    font-weight: 600;
+    position: relative;
+}
+
+#price-animation1{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    animation: fallingPrices 3s infinite;
+    
+}
+
+#price-animation2{
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    animation: fallingPrices 5s infinite;
+}
+
+#price-animation3{
+    position: absolute;
+    top: 5%;
+    right: 45%;
+    animation: fallingPrices 3s infinite;
+}
+
+#price-animation4{
+    position: absolute;
+    top: 10%;
+    right: 65%;
+    animation: fallingPrices 4s infinite;
+}
+
+#price-animation5{
+    position: absolute;
+    top: 5%;
+    right: 85%;
+    animation: fallingPrices 6s infinite;
+}
+
+.action-description{
+    font-weight: 900;
+    color: white;
+}
+
+
+
+.cards{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.card {
+    padding: 5%;
+    position: relative;
+}
+
+.to-basket-btn{
+    position: absolute;
+    bottom:1%
+}
+
+
+.old-price{text-decoration: line-through;
+color: gray;
+font-size: 0.9em;}
+
+.sale{
+    color: var(--light-blue);
+    font-family: var(--font-header);
+    font-weight: 600;
+    position: absolute;
+    top: 2%;
+}
+
+.sale1{
+    color: var(--orange);
+    font-family: var(--font-header);
+    font-weight: 600;
+    position: absolute;
+    top: 2%;
+}
+
+.favorite-btn {
+    all: unset;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 15%
+}
+
+.favorite-icon{
+     filter: grayscale(1);
+}
+
+.footer__container{
+    background: linear-gradient(var(--light-blue), var(--blue));
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.footer__links, .footer__contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2%;
+}
+
+.footer__links a, .footer__contact{
+    text-decoration: none;
+    color: var(--color-header);
+    font-family: var(--font-header);
+    font-weight: 600;
+    width: 300px;
+}
+
+.footer__social{
+    margin: 5%;
+}
+
+.footer__btn, .submit-btn
+{
+    all: unset;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 4%;
+    text-align: center;
+
+}
+
+.footer__btn:hover, .submit-btn:hover{
+    background: var(--blue);
+    transform: scale(1.1);
+}
+
+.footer__btn:active, .submit-btn:active{
+    background: var(--orange);
+    transform: scale(0.9);
+}
+.footer__form{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2%;
+}
+
+.submit-btn{
+    width: 30%;
+    margin: 0 auto;
+    color: var(--color-header);
+
+}
+
+.form-field{
+    border-radius: 5px;
+}
+
+.contact{
+    display: none;
+}
+
+/*Стилизация самого окна*/
+.profile-main{
+
+    max-width: 500px;
+    height: 30vh;
+    margin: 0 auto;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    background: linear-gradient(var(--blue), var(--light-blue));
+}
+
+/*Стилизация кнопок вход/регистрация*/
+.login-signup-btns{
+
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-btn, .signup-btn{
+    margin-bottom: -2%;
+    padding: 3%;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    background: var(--blue);
+    color: white;
+    font-family: var(--font-header);
+    font-weight: 900;
+    
+}
+
+/*Классы для активных-неактивных "вход"б "регистрация"*/
+.login-btn{
+    color: var(--yellow);
+}
+
+.login-btn-actived{
+    color: white;
+}
+
+.signup-btn-actived{
+    color: var(--yellow);
+}
+
+.change-pasword-btn, .enter-login-btn, .get-code{
+    all: unset;
+    max-width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: var(--font-header);
+    font-weight: 600;
+}
+
+
+.login-btns{
+    display: flex;
+    gap: 2%;
+
+}
+
+.change-pasword-btn:hover, .enter-login-btn:hover{
+    color: var(--yellow);
+}
+
+.change-pasword-btn:active, .enter-login-btn:active{
+    color: var(--orange);
+}
+
+
+
+/*Классы для появления/исчезновения форм входа/регистрации*/
+.login-form-0active{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.login-form-0hiden{
+    display: none;
+
+}
+
+.login-form-1active{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    
+  
+}
+.login-form-1hiden{
+    display: none;
+    
+}
+
+@keyframes flight{
+    0%{
+        transform:translateY(0%);
+        
+
+    }
+    
+    10%{ background: #fe7235;}
+    20%{ background: white;}
+    30%{ background: #fe7235;}
+
+
+
+    100%{
+
+        transform:translateY(-400px) translateX(800px);
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@keyframes phone-call{
+
+    
+    15%{transform:   rotate(20deg);}
+    20%{transform:   rotate(-20deg);}
+    25%{transform:  rotate(20deg);}
+    30%{transform:  rotate(-20deg);}
+    35%{transform: rotate(20deg);}
+    40%{transform:  rotate(-20deg);}
+
+}
+
+@keyframes title{
+    30%{    background: linear-gradient(to right top, #fe7235, #f7df0fe1);
+    color: white;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+}
+
+@keyframes colon{
+    100%{opacity: 1;;}
+}
+
+@keyframes fallingPrices {
+
+    100%{
+        opacity: 0;
+        transform: translateY(400px)
+    }
+    
+}
+
+
+

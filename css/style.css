@@ -9,31 +9,59 @@
     --color-header: white;
 }
 
-.nav-link:hover{
+.navigation{
+    width: 100%;
+    background: #212529;
+}
+
+.navigation__group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__links{
+    display: flex;
+    gap: 30px;
+}
+
+.navigation__links a{
+    text-decoration: none;
+    color: gray;
+}
+
+.navigation__links a:hover{
+    text-decoration: none;
+    color: var(--orange)
+}
+
+.search-field {
+    border: 2px solid gray;
+    background: transparent;
+    border-radius: 3px;
+    color: white;
+}
+
+
+.search-btn{
+    all: unset;
+}
+
+#menu-btn{
+    all: unset;
+    color: gray;
+}
+
+#menu-btn:hover{
     color: var(--orange);
 }
-
-
-.search{
-    display: flex;
-}
-
-#search-btn{
-    background: transparent;
-    border: none;
-}
-
-#search-btn:hover{
-    cursor: pointer;
-}
-
 
 .menu{
     max-width: 20%;
     width: max-content;
     height: 100vh;
     position: absolute;
-    top: 10%;
+    top: 90px;
     display: flex;
     flex-direction: column;
     padding: 40px;

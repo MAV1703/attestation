@@ -15,35 +15,21 @@
     <header>
         <div>
             <!--Навигация-->
+            <nav class="navigation p-4">
+                <div class="navigation__group">
+                    <div class = "navigation__links">
+                        <button id="menu-btn"><img class = m-2 src="images/icons/catalog.png" width="20px" alt="none">Каталог</button>
+                        <a href="basket.html"><img class = m-2  src="images/icons/basket (1).png" width="20px" alt="none"> Корзина</a>
+                        <a href="profile.html"><img class = m-2  src="images/icons/profile.png" width="20px" alt="none">Профиль</a>
+                        <a href="index.html"><img class = m-2  src="images/icons/home.png" width="20px" alt="none">На главную</a>
+                    </div>
 
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <button class="nav-link" id="menu-btn"><img class ="m-2" src ="images/icons/catalog.png" width="7%">Каталог</button>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="basket.html"><img class ="m-2" src="/images/icons/basket (1).png" width="7%">Корзина</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="profile.html"><img  class ="m-2" src="/images/icons/profile.png" width="7%">Профиль</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="index.html"><img class ="m-2" src="/images/icons/home.png" width="7%">На главную</a>
-      </li>
-      <li class="nav-item">
-        <div class="search mt-2">
-            <input id="search-field" type = text class="nav-link" placeholder="Найти товар"> 
-            <button id="search-btn"><img src="images/icons/search.png" width="20%"></button>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+                    <div class="search-group">
+                        <input type = text class="search-field" placeholder="Найти товар"> 
+                        <button class="search-btn"><img src="images/icons/search.png" width="20px" alt="none"></button>
+                    </div>
+                </div>
+                </nav>
         <!--каталог-->
      <div class="menu">
             <a href="#"><img class= "m-2" src="images/icons/computer.png" width="15%">Компьютеры и ноутбуки</a>

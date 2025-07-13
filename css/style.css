@@ -162,64 +162,7 @@ nav{
 
 
 
-.flash{
-    width: 8px;
-    height: 8px;
-    background: white;
-    position: absolute;
-    top: 40%;
-    border-radius: 5px;
-    animation: flight 10s infinite;
-}
 
-.flash1{
-    width: 8px;
-    height: 8px;
-    background: white;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    border-radius: 5px;
-    animation: flight 8s infinite;
-   
-}
-
-.flash2{
-    width: 8px;
-    height: 8px;
-    background: white;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    border-radius: 5px;
-    animation: flight 6s infinite;
-    
-}
-
-
-.flash3{
-    width: 8px;
-    height: 8px;
-    background: white;
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    border-radius: 5px;
-    animation: flight 8s infinite;
-    
-}
-
-
-.flash4{
-    width: 8px;
-    height: 8px;
-    background: white;
-    position: absolute;
-    top: 35%;
-    left: 20%;
-    border-radius: 5px;
-    animation: flight 5s infinite;
-}
 
 
 .name{

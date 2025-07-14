@@ -21,10 +21,10 @@ loginBtn.addEventListener("click", ()=> {
 
     form1.classList.remove("login-form-1active")
     form1.classList.add("login-form-1hiden")
-    loginBtn.classList.add("login-btn-actived")
+    loginBtn.classList.remove("login-btn-actived")
     form0.classList.remove("login-form-0hiden")
     form0.classList.add("login-form-0active")
-    signupBtn.classList.add("signup-btn-actived")
+    signupBtn.classList.remove("signup-btn-actived")
 }
 )
 

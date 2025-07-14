@@ -20,9 +20,9 @@ const notificationDays = document.querySelector("#notification-days")
             value = value - 1
             notificationMin.innerHTML = value
             if (value == 0){
-                notificationSec.innerHTML = 59
+                notificationMin.innerHTML = 59
             }
-        }, 59000)
+        }, 60000)
 
 //таймер: часы
 

@@ -80,5 +80,12 @@ footerBtn.addEventListener("click", ()=> {
     element.classList.toggle("favorite-icon")})})
 
     
-    
+    //Корзина - не работает
 
+    let cards = document.querySelectorAll(".card")
+    cards.forEach((card) =>{
+        let AddBtn = card.querySelector(".to-basket-btn")
+        AddBtn.addEventListener("click", ()=>{
+            localStorage.setItem("", card)
+        })
+    })
